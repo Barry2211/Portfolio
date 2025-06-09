@@ -93,7 +93,7 @@
         width: 100%;
     }
     .services {
-        padding: 0;
+        padding: 1rem;
     }
     .my-row {
         display: flex;
