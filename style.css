@@ -72,15 +72,15 @@ body {
 /* About section styles */
 .about {
     display: flex;
-    align-items: center;
-    background-image: linear-gradient(45deg, #363D73, #2794B3);
+    align-items: start;
+    background-image: linear-gradient(#000000);
     justify-content: center;
     width: 100%;
 }
 .about .about-text {
    /* width: 450px;*/
     color: #fff;
-    padding: 5rem 1rem 5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
 }
 .about .about-image img {
     
