@@ -27,3 +27,12 @@ document.querySelectorAll('.menu-list-items a').forEach(link => {
         }
     });
 });
+//Download button functionality
+document.getElementById('getResumeBtn').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'Assests/Shakthi Ganeshan J Resume.pdf';
+    link.download = 'Shakthi Ganeshan J Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
