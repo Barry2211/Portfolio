@@ -14,3 +14,16 @@ hamburger.addEventListener('click', function () {
         menu.style.display = "block"
     }
 });
+// Smooth scroll for navbar links
+document.querySelectorAll('.menu-list-items a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+});
