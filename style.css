@@ -152,30 +152,102 @@ body {
 }
 /* Contact section styles */
 .contact {
-    padding: 0 5rem;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
 }
+
+.contact-heading {
+    margin-bottom: 2rem;
+}
+
+
 .contact-content {
     display: flex;
-    margin: 3rem 0;
-    justify-content: space-between;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
+
+.contact-form-container,
+.contact-details {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(52, 152, 219, 0.08), 0 1.5px 6px rgba(52, 152, 219, 0.08);
+    padding: 2.5rem 2rem;
+    width: 370px;
+    min-width: 300px;
+    margin-bottom: 2rem;
+}
+
 .contact-form-container {
-    width: 50%;
+    flex: 1 1 350px;
 }
+
+.contact-details {
+    flex: 1 1 300px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
 }
-.contact-form .form-controls {
-    width: 80%;
-    padding: 10px 0;
-    margin: 1.67rem 0;
+
+.contact-form .form-controls,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8fafc;
+    resize: none;
+    transition: border 0.2s;
 }
+
+.contact-form .form-controls:focus,
+.contact-form textarea:focus {
+    border: 1.5px solid #35A99C;
+    outline: none;
+    background: #fff;
+}
+
 .contact-form .form-btn {
-    width: 83%;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
-.contact-details {
-    width: 50%;
+
+.contact-details .greet-heading {
+    margin-bottom: 1.5rem;
+    color: #206960;
+}
+
+.details {
+    margin-bottom: 1.2rem;
+}
+
+.contact-heading {
+    font-size: 1.1rem;
+    color: #35A99C;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-text,
+.contact-link {
+    font-size: 1rem;
+    color: #363D73;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.contact-link:hover {
+    color: #35A99C;
+    text-decoration: underline;
 }
 /* Footer Styles */
 .footer {
